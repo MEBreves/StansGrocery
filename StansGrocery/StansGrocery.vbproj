@@ -6,6 +6,7 @@
     <StartupObject>StansGrocery.SplashScreenForm</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationIcon>chicken.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

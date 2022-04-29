@@ -23,13 +23,14 @@ Partial Class StansGroceryForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StansGroceryForm))
         Me.TopMenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchMenuToolStripItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitMenuToolStripItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutMenuToolStripItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.SearchContextToolStripItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitContextToolStripItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainToolTip = New System.Windows.Forms.ToolTip(Me.components)
@@ -44,14 +45,14 @@ Partial Class StansGroceryForm
         Me.DisplayListBox = New System.Windows.Forms.ListBox()
         Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.AvailableItemsLabel = New System.Windows.Forms.Label()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.TopMenuStrip.SuspendLayout()
-        Me.ContextMenuStrip.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.FilterGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'TopMenuStrip
         '
+        Me.TopMenuStrip.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.TopMenuStrip.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.TopMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.TopMenuStrip.Location = New System.Drawing.Point(0, 0)
@@ -63,19 +64,25 @@ Partial Class StansGroceryForm
         '
         'FileToolStripMenuItem
         '
+        Me.FileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SearchMenuToolStripItem, Me.ExitMenuToolStripItem})
+        Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(71, 36)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'SearchMenuToolStripItem
         '
+        Me.SearchMenuToolStripItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.SearchMenuToolStripItem.ForeColor = System.Drawing.Color.White
         Me.SearchMenuToolStripItem.Name = "SearchMenuToolStripItem"
         Me.SearchMenuToolStripItem.Size = New System.Drawing.Size(218, 44)
         Me.SearchMenuToolStripItem.Text = "&Search"
         '
         'ExitMenuToolStripItem
         '
+        Me.ExitMenuToolStripItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.ExitMenuToolStripItem.ForeColor = System.Drawing.Color.White
         Me.ExitMenuToolStripItem.Name = "ExitMenuToolStripItem"
         Me.ExitMenuToolStripItem.Size = New System.Drawing.Size(218, 44)
         Me.ExitMenuToolStripItem.Text = "E&xit"
@@ -83,33 +90,36 @@ Partial Class StansGroceryForm
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutMenuToolStripItem})
+        Me.HelpToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(84, 36)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutMenuToolStripItem
         '
+        Me.AboutMenuToolStripItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.AboutMenuToolStripItem.ForeColor = System.Drawing.Color.White
         Me.AboutMenuToolStripItem.Name = "AboutMenuToolStripItem"
         Me.AboutMenuToolStripItem.Size = New System.Drawing.Size(212, 44)
         Me.AboutMenuToolStripItem.Text = "&About"
         '
-        'ContextMenuStrip
+        'ContextMenuStrip1
         '
-        Me.ContextMenuStrip.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SearchContextToolStripItem, Me.ExitContextToolStripItem})
-        Me.ContextMenuStrip.Name = "ContextMenuStrip"
-        Me.ContextMenuStrip.Size = New System.Drawing.Size(160, 80)
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SearchContextToolStripItem, Me.ExitContextToolStripItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(301, 124)
         '
         'SearchContextToolStripItem
         '
         Me.SearchContextToolStripItem.Name = "SearchContextToolStripItem"
-        Me.SearchContextToolStripItem.Size = New System.Drawing.Size(159, 38)
+        Me.SearchContextToolStripItem.Size = New System.Drawing.Size(300, 38)
         Me.SearchContextToolStripItem.Text = "&Search"
         '
         'ExitContextToolStripItem
         '
         Me.ExitContextToolStripItem.Name = "ExitContextToolStripItem"
-        Me.ExitContextToolStripItem.Size = New System.Drawing.Size(159, 38)
+        Me.ExitContextToolStripItem.Size = New System.Drawing.Size(300, 38)
         Me.ExitContextToolStripItem.Text = "E&xit"
         '
         'FilterGroupBox
@@ -191,6 +201,8 @@ Partial Class StansGroceryForm
         '
         'DisplayListBox
         '
+        Me.DisplayListBox.BackColor = System.Drawing.SystemColors.Control
+        Me.DisplayListBox.ForeColor = System.Drawing.SystemColors.ControlText
         Me.DisplayListBox.FormattingEnabled = True
         Me.DisplayListBox.ItemHeight = 32
         Me.DisplayListBox.Location = New System.Drawing.Point(23, 362)
@@ -217,17 +229,13 @@ Partial Class StansGroceryForm
         Me.AvailableItemsLabel.TabIndex = 10
         Me.AvailableItemsLabel.Text = "Available Items"
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
         'StansGroceryForm
         '
         Me.AcceptButton = Me.SearchButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(745, 644)
         Me.Controls.Add(Me.DisplayLabel)
         Me.Controls.Add(Me.DisplayListBox)
@@ -239,6 +247,7 @@ Partial Class StansGroceryForm
         Me.Controls.Add(Me.SearchButton)
         Me.Controls.Add(Me.FilterGroupBox)
         Me.Controls.Add(Me.TopMenuStrip)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.TopMenuStrip
         Me.Name = "StansGroceryForm"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
@@ -246,7 +255,7 @@ Partial Class StansGroceryForm
         Me.Text = "Stan's Grocery App"
         Me.TopMenuStrip.ResumeLayout(False)
         Me.TopMenuStrip.PerformLayout()
-        Me.ContextMenuStrip.ResumeLayout(False)
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.FilterGroupBox.ResumeLayout(False)
         Me.FilterGroupBox.PerformLayout()
         Me.ResumeLayout(False)
@@ -260,7 +269,7 @@ Partial Class StansGroceryForm
     Friend WithEvents ExitMenuToolStripItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutMenuToolStripItem As ToolStripMenuItem
-    Friend WithEvents ContextMenuStrip As ContextMenuStrip
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents SearchContextToolStripItem As ToolStripMenuItem
     Friend WithEvents ExitContextToolStripItem As ToolStripMenuItem
     Friend WithEvents MainToolTip As ToolTip
@@ -275,5 +284,5 @@ Partial Class StansGroceryForm
     Friend WithEvents DisplayListBox As ListBox
     Friend WithEvents DisplayLabel As Label
     Friend WithEvents AvailableItemsLabel As Label
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents StuffToolStripMenuItem As ToolStripMenuItem
 End Class
